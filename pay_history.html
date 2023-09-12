@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
     </nav>
     <!-- Navbar End -->
 
@@ -91,7 +91,8 @@
                     <ol class="breadcrumb justify-content-center text-uppercase">
                         <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
                         <li class="breadcrumb-item"><a href="#">Thông tin</a></li>
-                        <li class="breadcrumb-item active" aria-current="page"><a href="#pay_history" class="text-white">Lịch Sử Nạp Tiền</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#pay_history"
+                                class="text-white">Lịch Sử Nạp Tiền</a></li>
                     </ol>
                 </nav>
             </div>
@@ -104,35 +105,105 @@
         <div class="container-xxl py-3" id="pay_history">
             <div class="container">
                 <div class="text-center wow fadeInUp py-5" data-wow-delay="0.1s">
-                    <div class="row list-acc">
-                        <table class="table text-dark fw-bolder">
-                            <thead class="text-danger">
-                              <tr>
-                                <th scope="col">Mã GD</th>
-                                <th scope="col">Loại</th>
-                                <th scope="col">Tài Khoản</th>
-                                <th scope="col">Mật Khẩu</th>
-                                <th scope="col">Mật Khẩu Cấp 2</th>
-                                <th scope="col">Giá</th>
-                                <th scope="col">Ngày</th>
-                                <th scope="col">Ghi Chú</th>
-                                <th scope="col">Trạng Thái</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                    <div class="row">
+                        <!-- BANK -->
+                        <div class="col-md-6">
+                            <div class="card shadow p-3 mb-5 bg-body rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4"><i class="fas fa-history fa-sm"></i> Lịch sử nạp bank
+                                    </h4>
+                                    <div class="table-responsive">
+                                        <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                            <!-- BANK HISTORY -->
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table
+                                                        class="table table-bordered text-center table-nowrap dataTable no-footer"
+                                                        id="example2" role="grid" aria-describedby="example2_info"
+                                                        style="width: 560px;">
+                                                        <thead class="text-danger">
+                                                            <tr role="row">
+                                                                <th style="width: 9.2px;" class="sorting_disabled"
+                                                                    rowspan="1" colspan="1">#</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 155.2px;">Mã giao dịch</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 92.2px;">Số tiền</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 62.2px;">Loại</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 117.2px;">Thời gian</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd">
+                                                                <td valign="top" colspan="5" class="dataTables_empty">
+                                                                    Không tìm thấy dữ liệu</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- BANK HISTORY END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END BANK -->
+                        <!-- CARD -->
+                        <div class="col-md-6">
+                            <div class="card shadow p-3 mb-5 bg-body rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4"><i class="fas fa-history fa-sm"></i> Lịch sử nạp thẻ
+                                    </h4>
+                                    <div class="table-responsive">
+                                        <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                            <!-- CARD HISTORY -->
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table
+                                                        class="table table-bordered text-center table-nowrap dataTable no-footer"
+                                                        id="example2" role="grid" aria-describedby="example2_info"
+                                                        style="width: 560px;">
+                                                        <thead class="text-danger">
+                                                            <tr role="row">
+                                                                <th style="width: 9.2px;" class="sorting_disabled"
+                                                                    rowspan="1" colspan="1">#</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 83.2px;">Mã giao dịch</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 52.2px;">Loại thẻ</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 45.2px;">Mã thẻ</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 38.2px;">Serial</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 60.2px;">Mệnh giá</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 69.2px;">Thực nhận</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 66.2px;">Trạng thái</th>
+                                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                                    style="width: 61.2px;">Thời gian</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd">
+                                                                <td valign="top" colspan="12" class="dataTables_empty">
+                                                                    Không tìm thấy dữ liệu</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- CARD HISTORY END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD -->
                     </div>
                 </div>
             </div>
