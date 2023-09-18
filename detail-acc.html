@@ -112,8 +112,45 @@
                                 class="text-danger fw-bolder">4000</span> tỷ</h1>
                         <img src="./img/team-1.png" alt="">
                         <div class="btn-buy-item text-center w-25 mt-2">
-                            <button class="btn btn-glow text-wrap" type="button">Mua Ngay</button>
+                            <button class="btn btn-glow text-wrap" id="openModalBtn" type="button">Mua Ngay</button>
                         </div>
+                        <!-- POP UP MODAL -->
+                        <div class="modal fade" id="myModal" data-bs-backdrop="static">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header d-flex align-items-center">
+                                        <h5 class="modal-title">Tài khoản
+                                            #<span class="id-acc">123456</span> |
+                                            Giá trị đội hình: <span class="number-team">1</span> - Dư BP:
+                                            <span class="res-team">78910</span> Tỷ
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body pb-0">
+                                        <h3> ATM:
+                                            <span class="atm-money">39.600.000</span>
+                                            <br>
+                                            CARD:
+                                            <span class="card-money">44.000.000</span>
+                                           
+                                        </h3>
+                                        <h5 class="m-1">Bạn có:
+                                            <span class="money-have text-danger"> 0</span>
+                                            đ
+                                        </h5>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mua
+                                            Ngay</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Hủy Bỏ</button>
+                                    </div>
+                                    <div class="input-money pb-2">
+                                        <a href="pay.html"><u> Bạn chưa đủ tiền, nhấn vào đây để nạp tiền?</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POP UP MODAL END -->
                     </div>
                 </div>
             </div>
@@ -346,6 +383,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
