@@ -81,7 +81,6 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center text-uppercase">
                         <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
-                        <li class="breadcrumb-item"><a href="pay.html">Nạp Tiền</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><a href="#pay" class="text-white">Nạp
                                 Tiền</a></li>
                     </ol>
@@ -97,16 +96,69 @@
             <div class="container">
                 <div class="text-center wow fadeInUp py-5" data-wow-delay="0.1s">
                     <div class="row">
-                        <div class="col-md-12">
+                        <!-- Bank -->
+                        <div class="col-md-8">
+                            <div class="card list-acc">
+                                <div class="card-body">
+
+                                    <h4 class="card-title mb-4"><i class="fas fa-credit-card fa-sm"></i> Nạp tiền qua
+                                        ngân hàng</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-4 text-center">
+                                            <img src="./img/new-momo.png" class="mb-3" height="60px" width="60px">
+                                            <div class="card bg-dark  text-light">
+                                                <div class="card-body">
+                                                    STK: <span class="copyText" data-clipboard-text="0123456789"
+                                                        style="cursor: pointer;"><b>0123456789</b></span><br>
+                                                    CTK: KIEU DAI MINH<br>
+                                                    MIN: 10,000đ<br><br>
+                                                    <img src="https://chart.googleapis.com/chart?chs=480x480&amp;cht=qr&amp;choe=UTF-8&amp;chl=2|99|0847379222|HA THI THU HANG|admin@gmail.com|0|0|10000|sgr|transfer_myqr"
+                                                        width="90%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 text-center">
+                                            <img src="./img/icon-vcb.png" class="mb-3" height="60px" width="60px">
+                                            <div class="card bg-dark  text-light">
+                                                <div class="card-body">
+                                                    STK: <span class="copyText" data-clipboard-text="0123456789"
+                                                        style="cursor: pointer;"><b>0123456789</b></span><br>
+                                                    CTK: KIEU DAI MINH<br>
+                                                    MIN: 10,000đ<br><br>
+                                                    <img src="https://img.vietqr.io/image/mbbank-0349402518-compact.png?accountName=DUONG THANH LONG&amp;amount=10000&amp;addInfo=naptienaccgames"
+                                                        width="90%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <h4 class="card-title mt-2">Nội dung chuyển khoản</h4>
+                                            <div class="card bg-info text-light">
+                                                <div class="card-body text-center">
+                                                    <h5 class="mb-0 text-white">naptienaccgames <i
+                                                            class="fas fa-copy copyText"
+                                                            data-clipboard-text="naptienaccgames"
+                                                            style="cursor: pointer;"></i></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Bank -->
+
+                        <!-- Card -->
+                        <div class="col-md-4">
                             <div class="card list-acc">
                                 <div class="card-body">
                                     <h4 class="card-title mb-4"><i class="fas fa-hand-holding-usd fa-sm"></i> Nạp tiền
                                         bằng thẻ cào</h4>
-                                        <div class="card text-danger mb-2">
-                                            <div class="card-body">
-                                                - Vui lòng chọn đúng mệnh giá thẻ chọn sai thẻ sẽ mất
-                                            </div>
+                                    <div class="card text-danger mb-2">
+                                        <div class="card-body">
+                                            - Vui lòng chọn đúng mệnh giá thẻ chọn sai thẻ sẽ mất
                                         </div>
+                                    </div>
                                     <form action="" method="post" id="formCard">
                                         <div class="form-group mb-3">
                                             <label for="" class="form-label">Loại thẻ</label>
@@ -153,12 +205,16 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- End Card -->
+
+
                     </div>
+                    <!-- Pay Acc End-->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Pay Acc End-->
+    <!-- End Pay Acc -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-2 wow fadeIn" data-wow-delay="0.1s">
@@ -186,7 +242,8 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Shop Acc FiFa Online 4</a>, All Right
+                            &copy; <a class="border-bottom" href="#">Shop Acc FiFa Online 4</a>, All
+                            Right
                             Reserved.
                             Designed By <a class="border-bottom" href="#">Ao Cá</a>
                         </div>
